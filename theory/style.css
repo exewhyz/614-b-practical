@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+}
+
+.box {
+  width: 60%;
+  height: fit-content;
+  background-color: bisque;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.inner-box {
+  width: 100px;
+  height: 100px;
+}
+
+#box1 {
+  background-color: brown;
+}
+
+#box2 {
+  background-color: blue;
+}
+
+#box3 {
+  background-color: green;
+}
