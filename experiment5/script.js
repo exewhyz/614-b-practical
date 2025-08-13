@@ -20,7 +20,7 @@ function filter(category) {
 categoryElement.addEventListener("change", () => {
   const filtered = filter(categoryElement.value);
   const productList = filtered.map((value) => {
-    return `<div style="border: 1px solid gray; padding: 10px; margin:5px; display:inline-block;">${value.name}</div>`;
+    return `<div style="border: 1px solid gray; padding: 10px; margin:5px;">${value.name}</div>`;
   });
   const data = productList.join("");
   productsElement.innerHTML = data;
@@ -28,7 +28,7 @@ categoryElement.addEventListener("change", () => {
 
 const filtered = filter("all");
 const productList = filtered.map((value) => {
-  return `<div style="border: 1px solid gray; padding: 10px; margin:5px; display:inline-block;">${value.name}</div>`;
+  return `<div style="border: 1px solid gray; padding: 10px; margin:5px;">${value.name}</div>`;
 });
 const data = productList.join("");
 productsElement.innerHTML = data;
